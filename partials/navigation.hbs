@@ -1,0 +1,12 @@
+<a href="#header" class="w-inline-block logo-link">
+  {{#get "users" id=1}}
+          {{#foreach users}}
+              <h1 id="authorName">{{name}}</h1>
+          {{/foreach}}
+   {{/get}}
+ </a>
+{{#foreach navigation}}
+    <a href="{{url absolute="true"}}" data-name="{{label}}" data-context="Left Nav" data-category="Nav" class="nav-link">{{label}}</a>
+    {{log author}}
+{{/foreach}}
+

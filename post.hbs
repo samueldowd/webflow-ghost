@@ -1,0 +1,33 @@
+{{!< default}}
+{{log post}}
+<div class="section" id="journal">
+  <div class="w-container">
+      <div class="w-row">
+          {{#post}}
+          <article class="{{post_class}}">
+              <header class="post-header">
+                  <h1 class="post-title">{{title}}</h1>
+                  <section class="post-meta">
+                      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                          {{date format="MMMM D, YYYY"}}
+                      </time>
+                      {{tags prefix=" on "}}
+                  </section>
+                  <img src="{{image}}" class="post-image"/>
+              </header>
+              <section class="post-content">
+                  {{content}}
+              </section>
+          </article>
+          {{/post}}
+      </div>
+      <div class="w-row">
+      <p class="post bio-text">
+        <em>Amber Auger, RDH, MPH, is a hygienist with over six years of experience in multiple clinical settings, including facilities abroad. This experience has allowed her to educate dental hygiene students and coach dental teams on periodontal systems to optimize practice growth. She holds a full-time position at an elite dental office in Boston, and owns her own dental consulting company. Amber obtained master’s in public health from the University of New England and her bachelor’s of dental hygiene from the University of New Haven. Amber specializes in pediatric education, periodontal education, and continues to create progressive systems. She is a key opinion leader for several elite dental companies and a published author. She can be contacted at amberaugerrdh@gmail.com.</em>
+      <p>
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/webflow.js"></script>
+<!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->

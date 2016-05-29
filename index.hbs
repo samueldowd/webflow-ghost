@@ -1,0 +1,41 @@
+{{!< default}}
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Tue Dec 30 2014 19:37:12 GMT+0000 (UTC) -->
+  <div id="aboutme" class="w-section section">
+    <div class="w-container">
+      <div class="w-row rowexp">
+        <div class="w-col w-col-4 align-right">
+          <h1>About Me</h1>
+        </div>
+      {{#get "users" id=1}}
+        {{#foreach users}}
+            <div class="w-col w-col-8 w-clearfix">
+                <img src="{{image}}" class="portrait">
+                <p>{{bio}}</p>
+            </div>
+        {{/foreach}}
+      {{/get}}    
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="journal">
+  <div class="w-container">
+    <div class="w-row">
+      <div class="w-col w-col-4 align-right">
+        <h1>Articles</h1>
+      </div>
+      <div class="w-col w-col-8">
+        {{> "loop"}}
+        {{pagination}}
+      </div>
+</div>
+</div>
+</div>
+<!--     <p>{{log author}}</p>
+ -->    <div></div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/webflow.js"></script>
+
+    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+

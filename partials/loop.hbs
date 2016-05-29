@@ -1,0 +1,10 @@
+{{#foreach posts}}
+<div class="w-inline-block journal-entry">
+    <a href="{{url}}" style="text-decoration: none;">
+        <h2 style="color:black">{{title}}</h2>
+    </a>
+    <p>{{date format="DD MMMM, YYYY"}}</p>
+    <p>{{excerpt}}</p>
+    <a class="more" href="{{url}}">Read More &raquo;</a>
+</div>
+{{/foreach}}

@@ -1,0 +1,12 @@
+{
+  "name": "webflow-ghost",
+  "version": "0.2.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samueldowd/gastly.git"
+  },
+  "description": "A ghost theme adapted to match a webflow site",
+  "homepage": "http://samueldowd.com",
+  "author": "samueldowd"
+}
